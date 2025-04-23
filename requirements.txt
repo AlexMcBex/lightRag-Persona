@@ -1,0 +1,11 @@
+lightrag-hku
+motor
+openai
+python-dotenv
+numpy
+tiktoken
+pipmaster
+
+fastapi
+uvicorn
+lightrag
