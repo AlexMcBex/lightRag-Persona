@@ -156,8 +156,8 @@ async def insert_users_from_mongo(
 # 3) Compare All Retrieval Modes
 # ------------------------------------------------------------------------
 async def compare_all_modes(rag: LightRAG, user_question: str):
-    modes = ["naive", "local", "global", "hybrid", "mix"]
-    # modes=["local"]
+    # modes = ["naive", "local", "global", "hybrid", "mix"]
+    modes=["local"]
     print(f"\n=== Comparing Answers for Question: '{user_question}' ===\n")
     for mode in modes:
         response = await rag.aquery(query=user_question, param=QueryParam(mode=mode))
