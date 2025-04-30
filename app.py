@@ -45,7 +45,8 @@ Rules:
 - If fewer than 5 matches exist, return as many as available.
 - Do not include explanations, descriptions, or any other text outside the JSON.
 - Ensure the MongoDB user IDs are correctly taken from the database and are valid.
-If there are fewer than 5 matches, return as many as available following the same format. Avoid repeating the same user in the array more
+- If there are fewer than 5 matches, return as many as available following the same format. Avoid repeating the same user in the array more
+- DO NOT include the same user of the user_id provided by the request in the matches array.
 
 Output:
 Return ONLY a valid JSON object using the following structure, with no extra text, symbols etc.:
